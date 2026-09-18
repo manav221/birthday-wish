@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday, My Love ❤️</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+
+  <body>
+    <div class="grain"></div>
+    <div id="hearts"></div>
+
+    <!-- NAVIGATION -->
+    <nav>
+      <div class="logo">FOR <span>MY ♥ NIKKU</span></div>
+
+      <div>
+        <a href="#memories">Memories</a>
+        <a href="#letter">Letter</a>
+        <a href="#surprise">Surprise</a>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero">
+      <div class="hero-content">
+        <div class="small-title">A little surprise for you</div>
+
+        <!-- CHANGE NAME HERE -->
+        <h1>
+          Happy Birthday
+          <span>Nikku My Love</span>
+        </h1>
+
+        <p>
+          Today isn't just your birthday. It's a celebration of the beautiful
+          person who makes my world a little brighter every day.
+        </p>
+
+        <!-- CHANGE DATE HERE -->
+        <div class="date">19 • 09 • 2026</div>
+      </div>
+
+      <div class="scroll">SCROLL TO DISCOVER ↓</div>
+    </header>
+
+    <!-- LOVE INTRO -->
+    <section class="love-section">
+      <div class="big-heart">♥</div>
+
+      <h2 class="section-title">You are my favourite chapter.</h2>
+
+      <p class="section-subtitle">
+        Out of all the people in this world, somehow our paths crossed. And that
+        is one of the things I will always be grateful for.
+      </p>
+    </section>
+
+    <!-- MEMORIES -->
+    <section id="memories">
+      <div class="small-title">OUR LITTLE WORLD</div>
+
+      <h2 class="section-title">Memories I never want to forget.</h2>
+
+      <div class="gallery">
+        <!-- CHANGE THESE IMAGE FILES -->
+        <div class="photo">
+          <img src="src/assets/photo1.jpeg" alt="Our memory" />
+          <div class="photo-text">Charm.</div>
+        </div>
+
+        <div class="photo">
+          <img src="src/assets/photo2.jpeg" alt="Our memory" />
+          <div class="photo-text">Cutiepie.</div>
+        </div>
+
+        <div class="photo">
+          <img src="src//assets/photo3.jpeg" alt="Our memory" />
+          <div class="photo-text">Us.</div>
+        </div>
+
+        <div class="photo">
+          <img src="src//assets/photo4.jpeg" alt="Our memory" />
+          <div class="photo-text">Forever favourite.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOVE COUNTER -->
+    <section class="counter-section">
+      <div class="small-title">TIME TOGETHER</div>
+
+      <h2 class="section-title">And counting...</h2>
+
+      <p class="section-subtitle" style="margin-left: auto; margin-right: auto">
+        Every second with you is a second worth remembering.
+      </p>
+
+      <div class="counter">
+        <div class="counter-box">
+          <strong id="days">0</strong>
+          <span>Days</span>
+        </div>
+
+        <div class="counter-box">
+          <strong id="hours">0</strong>
+          <span>Hours</span>
+        </div>
+
+        <div class="counter-box">
+          <strong id="minutes">0</strong>
+          <span>Minutes</span>
+        </div>
+
+        <div class="counter-box">
+          <strong id="seconds">0</strong>
+          <span>Seconds</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOVE LETTER -->
+    <section id="letter">
+      <div class="letter-wrapper">
+        <div class="letter">
+          <h3>My Dearest Love,</h3>
+
+          <p>
+            If I could give you one thing today, I would give you the ability to
+            see yourself through my eyes.
+          </p>
+
+          <p>Maybe then you would understand just how special you are to me.</p>
+
+          <p>
+            Thank you for every laugh, every conversation, every little moment
+            and every memory. Thank you for simply being you.
+          </p>
+
+          <p>
+            I don't know what the future has written for us, but I know one
+            thing — I want to keep making memories with you.
+          </p>
+
+          <div class="signature">
+            Forever yours,<br />
+            ❤️ MR
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SURPRISE -->
+    <section id="surprise" class="surprise">
+      <div class="small-title">ONE LAST THING</div>
+
+      <h2 class="section-title">I have a surprise for you.</h2>
+
+      <p class="section-subtitle" style="margin-left: auto; margin-right: auto">
+        There is only one way to find out what's inside.
+      </p>
+
+      <div class="gift">
+        <div class="gift-lid"></div>
+        <div class="gift-lid right"></div>
+      </div>
+
+      <p style="color: rgba(255, 255, 255, 0.45)">Tap the gift ❤️</p>
+
+      <div class="surprise-message" id="surpriseMessage">
+        <h2>I LOVE YOU.</h2>
+
+        <p>
+          Happy Birthday to the woman who makes ordinary days feel
+          extraordinary. Here's to more adventures, more laughter, more
+          memories, and a lifetime of us.
+        </p>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <h2>Until forever. ♥</h2>
+
+      <p>Made with love, just for you.</p>
+    </footer>
+
+    <!-- MUSIC -->
+    <button class="music-btn" onclick="toggleMusic()" id="musicBtn">♫</button>
+
+    <audio id="music" loop>
+      <!-- PUT YOUR MUSIC FILE HERE -->
+      <source src="./src/assets/song.mpeg" type="audio/mpeg" />
+    </audio>
+
+    <script src="src/script.js"></script>
+  </body>
+</html>
