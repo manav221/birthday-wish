@@ -176,6 +176,8 @@ function toggleMusic() {
   }
 }
 
+musicBtn.addEventListener("click",toggleMusic);
+
 const observer = new IntersectionObserver((entries) => {
   const letter = entries[0];
   if (letter.isIntersecting) {
