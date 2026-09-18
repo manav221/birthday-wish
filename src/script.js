@@ -89,8 +89,17 @@ function openGift() {
   }, 300);
 }
 
+function debounce(fn, delay = 400) {
+  let timer;
+
+  return function () {
+    clearTimeout(timer);
+    timer = setTimeout(fn, delay);
+  }
+}
+
 const gift = document.querySelector(".gift");
-gift.addEventListener("click", openGift);
+gift.addEventListener("click", debounce(openGift));
 
 
 /* =========================
@@ -98,13 +107,13 @@ gift.addEventListener("click", openGift);
 ========================= */
 
 function createConfetti() {
-  const symbols = ["☆","✦","✶","🟅","♫","♪","𝄞","♡","❤︎⁠","ꨄ"]
+  const symbols = ["☆", "✦", "✶", "🟅", "♫", "♪", "𝄞", "♡", "❤︎⁠", "ꨄ"]
   for (let i = 0; i < 100; i++) {
 
     const piece = document.createElement("div");
-    const symbol = symbols[Math.floor(Math.random()*symbols.length)];
+    const symbol = symbols[Math.floor(Math.random() * symbols.length)];
     piece.innerText = symbol;
-    
+
     piece.style.fontSize = 6 + Math.random() * 30 + "px";
     piece.style.position = "fixed";
     piece.style.color =
@@ -176,7 +185,7 @@ function toggleMusic() {
   }
 }
 
-musicBtn.addEventListener("click",toggleMusic);
+musicBtn.addEventListener("click", toggleMusic);
 
 const observer = new IntersectionObserver((entries) => {
   const letter = entries[0];
